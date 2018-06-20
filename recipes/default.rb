@@ -10,6 +10,7 @@ when 'linux'
     include_recipe 'cis-rhel::default'
   else
     include_recipe 'os-hardening::default'
+    include_recipe 'emea_demo_remediation::auditd'
   end
 when 'windows'
   include_recipe 'windows-hardening::default'
